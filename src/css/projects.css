@@ -1,0 +1,96 @@
+.projects {
+  background: #0a1f34;
+  display: grid;
+  margin: 10px;
+}
+
+.projects h4 {
+  color: blue;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+/*kinda controls "map project" but not font color??*/
+.projects .name {
+  color: crimson;
+  padding: 10px;
+  font-family: "ubuntu", sans-serif;
+}
+.projects .title {
+  position: relative;
+  text-align: center;
+  color: crimson;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.projects .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: crimson;
+  transform: translateX(-50%);
+}
+.projects .title::before {
+  background: crimson;
+}
+.projects .title::after {
+  content: "what i create";
+  color: 0a1f34;
+}
+
+/*minute 37:52 in video - how i create*/
+.projects .title::after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px;
+  background: #0a1f34;
+  transform: translateX(-50%);
+}
+
+.slider{
+  position: relative;
+  /*max-width: 12.5em; /*max-width refers to ability to shrink in a browser....changing it to a small number like 12 makes the image visually smaller, em refers to scaling size in 16ths*/
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.projects #mt-hood-map {
+  border-radius: 20px;
+}
+.stats{
+  display: flex;
+  align-items: center;
+}
+.rank/*rank is the little banner*/{
+  position: absolute;
+  top: 0;
+  right: 1.2em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background: crimson;
+  padding: .75em .5em 1.75em;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
+}
+.projects .card{
+  padding: 20px;
+  font-family: "ubuntu", sans-serif;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+.sub-title {
+  font-weight: 300px;
+}

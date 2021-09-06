@@ -1,0 +1,67 @@
+
+/*home section styling hello ny name is*/
+.home{
+    display: flex;
+    background: url("../img/background2.png");
+    background-size: cover;
+    background-color: #111;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  /*this adds margin paddings*/
+  .home .max-width{
+    margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-1{
+    font-size: 28px;
+  }
+  .home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+  }/*color of words instructional designer*/
+  .home .home-content .text-3 span{
+    color: crimson;
+    font-weight:500;
+  }
+  /*let's connect*/ 
+  /* .home .home-content a{
+    display: inline-block;
+    background: #61BFDF;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 2.5px 2.5px #646464;
+    transition: all 0.3s ease;
+  } */
+  /* .home .home-content a:hover{
+    color: #fff;
+    background: maroon; /*can change to none if want transparent*/
+    /*this code increases size on hover*/
+    /* transform: scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+  } */
+
+  
+/*responsive media query start */
+@media (max-width: 1300px){
+    .home .max-width{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 1104px){
+    .home .about-content .left img{
+      height: 350px;
+      width: 350px;
+    }
+  }

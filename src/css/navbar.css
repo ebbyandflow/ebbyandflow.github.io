@@ -1,0 +1,99 @@
+/*navbar styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family:'ubuntu-condensed', sans-serif;
+    transition: all 0.3s ease;
+   }
+  /*navbar scroll down color change*/
+  .navbar.sticky{
+    padding: 30px 0;
+    background: crimson;
+  }
+  .navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .logo a{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  /*Last name logo color*/
+  .navbar .logo a span{
+    color: #61BFDF;
+  }/*hall*/
+  .navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .navbar .menu li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease-out;
+  }/*color changing on hover over nav bar*/
+  .navbar .menu li a:hover{
+    color: crimson;
+  }
+  .navbar.sticky .menu li a:hover{
+    color: green;
+  }
+  /* menu btn styling*/
+  .menu-btn{
+    color: crimson;
+    font-size: 23px;
+    cursor: grab;
+    display: none;
+  }
+  .menu-btn:hover{
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+    margin: 8px;
+  }
+
+  @media (max-width: 999px){
+    .menu-btn{
+      display: block;
+      z-index: 999;
+    }
+  
+    .menu-btn i.active:before{
+      content: "\f00d";
+    }
+    .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: #111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+      left: 0;
+    }
+    .navbar .menu li{
+      display: block;
+    }
+    .navbar .menu li a{
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+}
