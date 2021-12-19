@@ -17,19 +17,23 @@
   }
   .home .home-content .text-1{
     font-size: 28px;
+    padding-left: 30px;
   }
   .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    padding-left: 30px;
   }
   .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    padding-left: 30px;
   }/*color of words instructional designer*/
   .home .home-content .text-3 span{
     color: crimson;
     font-weight:500;
+
   }
   /*let's connect*/ 
   /* .home .home-content a{
