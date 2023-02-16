@@ -16,7 +16,7 @@ $(document).ready(function(){
 //typing animation script
 var typed = new Typed(".typing", {
  strings: ["Learning Experience Designer", "Project Manager", "Data Visualizer ", "Consultant"],
- typeSpeed: 50,
+ typeSpeed: 30,
  backSpeed: 30, 
  loop: true
 });
